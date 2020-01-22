@@ -21,7 +21,7 @@ The workshops documentation demonstrates few examples on how to utilize GeoNode-
 1- Customize your GeoNode with the geonode-project
 --------------------------------------------------
 
-In this example, GeoNode-Project is cloned to create a template instance in which th rest of the examples will be building on top of it.
+In this example, GeoNode-Project is cloned to create a template instance in which the rest of the examples will be building on top of it.
 
 1- Assuming you already installed GeoNode-Core, firstly we need to create a GeoNode-Project template and this can be achieved from the following command:
 
@@ -44,7 +44,7 @@ Here, django-admin is used with startproject option to create my_geonode project
     $ cd /home/geonode/my_geonode
     $ paver setup
 
-4- Note the GeoNode database connection parameters mentioned in the local_settings.py configuration file. If not found, copy local_settings.py.sample and rename it to local_settings.py then use psql to create the required user and grant the required previleges as follows:
+4- Note the GeoNode database connection parameters mentioned in the local_settings.py configuration file. If not found, copy local_settings.py.sample and rename it to local_settings.py then use psql to create the required user and grant the required privileges as follows:
 
 .. code-block:: shell
     
@@ -397,9 +397,9 @@ At this point we need to ask django to create the database table. Django since v
 
 .. code-block:: shell
     
-    python manage.py makemigrations
+    python manage.py make migrations
     
-    # the above command informs you with the mogrations to be executed on the database
+    # the above command informs you with the migrations to be executed on the database
     
     python manage.py migrate
 
@@ -774,7 +774,7 @@ We can inject the url into the GeoNode API by adding the following in my_geonode
     
     api.register(GeocollectionResource())
 
-And add the follofing in the urlpatterns:
+And add the following in the urlpatterns:
 
 .. code-block:: python
     
@@ -855,7 +855,7 @@ Steps to push your code to GitHub:
 
 - Create an empty repository in GitHub and copy it's address
 
-- In my_geonode, run git initto initialize an empty repository
+- In my_geonode, run git init to initialize an empty repository
 
 - Add your remote repository address with "git remote add yourname yourremoteaddress"
 
